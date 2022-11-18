@@ -1,0 +1,489 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html, body {
+    padding: 0;
+    margin: 0;
+    min-height: 100vh;
+    width: 100%;
+    scroll-behavior: smooth;
+}
+
+nav {
+    width: 100%;
+    padding: 1rem 8rem 0 8rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav .logo {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+nav .navs {
+    display: flex;
+    align-items: center;
+    gap: 1.75rem;
+}
+
+nav .navs .nav {
+    color: rgba(0, 0, 0, 0.5);
+    text-decoration: none;
+    font-size: 1.15rem;
+}
+
+nav .navs .active {
+    color: #ffffff;
+    background-color: #546de5;
+    padding: 0.35rem 0.6rem;
+    border-radius: 99px;
+    font-weight: 600;
+}
+
+nav .actions {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+nav .actions .action {
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    border-radius: 99px;
+    background-color: #546de5;
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+.landing {
+    padding: 4rem 8rem 0 8rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+}
+
+.landing .header {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.landing .header h1 {
+    margin: 0;
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+.landing .landing-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.landing .landing-swiper {
+    height: 600px;
+    width: 100%;
+    border-radius: 999px;
+}
+
+.landing .swiper-slide img {
+    height: 100%;
+    width: 100%;
+}
+
+.landing .plane {
+    position: absolute;
+    z-index: 9;
+    padding-bottom: 8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.landing .plane img {
+    width: 90%;
+}
+
+.tips {
+    margin-top: 4rem;
+    padding: 2rem 8rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+}
+
+.tips .title {
+    margin: 0;
+    font-size: 3.5rem;
+    letter-spacing: 0.25rem;
+}
+
+.tips .title span {
+    background: #546de5;
+    border-radius: 99px;
+    color: #ffffff;
+    padding: 0 1rem;
+}
+
+.tips .tip {
+    display: flex;
+    width: 100%;
+}
+
+.tips .tip .img {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tips .tip .img div {
+    height: 500px;
+    width: 300px;
+    border-radius: 999px;
+    overflow: hidden;
+}
+
+.tips .tip .img div img {
+    height: 100%;
+    width: 100%;
+}
+
+.tips .tip .content {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.tips .tip .content h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    line-height: 1.25;
+}
+
+.tips .tip .content p {
+    font-size: 1.15rem;
+}
+
+.tips .tip .content .more {
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    border-radius: 99px;
+    color: #000000;
+    background-color: #f1f2f6;
+}
+
+.tips .tip .content .more:hover {
+    color: #ffffff;
+    border: 0;
+    background-color: #70a1ff;
+    transition: 0.5s;
+}
+
+.featured {
+    margin-top: 4rem;
+    padding: 2rem 8rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+    background-color: #f1f2f6;
+}
+
+.featured .title {
+    margin: 0;
+    font-size: 3.5rem;
+    letter-spacing: 0.25rem;
+}
+
+.featured .title span {
+    background: #546de5;
+    border-radius: 99px;
+    color: #ffffff;
+    padding: 0 1rem;
+}
+
+.featured .posts {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 3rem;
+}
+
+.featured .posts .post {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: #ffffff;
+    border-radius: 99px;
+    overflow: hidden;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.featured .posts .post .img {
+    width: 100%;
+    height: 200px;
+    border-radius: 99px;
+}
+
+.featured .posts .post .img img {
+    width: 100%;
+    height: 200px;
+}
+
+.featured .posts .post .content {
+    padding: 1rem 2rem;
+}
+
+.featured .posts .post .content h1 {
+    font-size: 1.5rem;
+    margin: 0;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.featured .posts .post .content .more-btn {
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.featured .posts .post .content .more {
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    border-radius: 99px;
+    color: #000000;
+    background-color: #f1f2f6;
+    margin-bottom: 1rem;
+}
+
+.featured .posts .post .content .more:hover {
+    color: #ffffff;
+    border: 0;
+    background-color: #70a1ff;
+    transition: 0.5s;
+}
+
+.destinations {
+    margin-top: 4rem;
+    padding: 2rem 8rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+}
+
+.destinations .title {
+    margin: 0;
+    font-size: 3.5rem;
+    letter-spacing: 0.25rem;
+}
+
+.destinations .title span {
+    background: #546de5;
+    border-radius: 99px;
+    color: #ffffff;
+    padding: 0 1rem;
+}
+
+.destinations .countries {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 3rem;
+    text-align: center;
+}
+
+.destinations .countries .country .flag {
+    width: 100%;
+    height: 200px;
+    border-radius: 99px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 15px;
+}
+
+.destinations .countries .country .flag img {
+    width: 100%;
+    height: 100%;
+}
+
+.destinations .countries .country .name {
+    margin-top: 1rem;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.newsletter {
+    margin-top: 4rem;
+    padding: 2rem 8rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+    background-color: #f1f2f6;
+}
+
+.newsletter .title {
+    margin: 0;
+    font-size: 3.5rem;
+    letter-spacing: 0.25rem;
+}
+
+.newsletter .title span {
+    background: #546de5;
+    border-radius: 99px;
+    color: #ffffff;
+    padding: 0 1rem;
+}
+
+.newsletter .input {
+    width: 100%;
+    text-align: center;
+}
+
+.newsletter .input input {
+    width: 80%;
+    padding: 0.8rem 1.6rem;
+    border: 0;
+    outline: 0;
+    border-radius: 99px;
+    font-size: 1.5rem;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.newsletter .btn button {
+    padding: 0.8rem 1.6rem;
+    border: 0;
+    outline: 0;
+    border-radius: 99px;
+    font-size: 1.5rem;
+    background: #70a1ff;
+    color: #ffffff;
+    font-weight: 700;
+    cursor: pointer;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+@media (max-width: 1440px) {
+    .landing .landing-swiper {
+        height: 475px;
+    }
+}
+
+@media (max-width: 1280px) {
+    .landing .landing-swiper {
+        height: 375px;
+    }
+
+    nav .navs {
+        display: none;
+    }
+
+    .featured .posts {
+        display: grid;
+        width: 100%;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 3rem;
+        row-gap: 3rem;
+    }
+    
+    .destinations .countries {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 3rem;
+        row-gap: 3rem;
+    }
+}
+
+@media (max-width: 980px) {
+    .landing .landing-swiper {
+        height: 275px;
+    }
+
+    .landing .header h1 {
+        font-size: 2rem;
+    }
+
+    .tips .title {
+        font-size: 2.5rem;
+        text-align: center;
+    }
+    
+    .tips .tip {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .tips .tip .img {
+        width: 100%;
+    }
+
+    .tips .tip .content {
+        width: 100%;
+    }
+
+    .featured .title {
+        font-size: 2.5rem;
+        text-align: center;
+    }
+
+    .featured .posts {
+        display: grid;
+        width: 100%;
+        grid-template-columns: 1fr;
+        column-gap: 3rem;
+        row-gap: 3rem;
+    }
+
+    .destinations .title {
+        font-size: 2.5rem;
+        text-align: center;
+    }
+
+    .destinations .countries {
+        grid-template-columns: 1fr;
+    }
+
+    .tips .tip .content h1 {
+        margin: 0;
+        font-size: 1.5rem;
+        line-height: 1.25;
+    }
+
+    .landing {
+        padding: 4rem 4rem 0 4rem;
+    }
+
+    .newsletter .title {
+        font-size: 2.5rem;
+        text-align: center;
+    }
+
+    .newsletter .input input {
+        font-size: 1rem;
+    }
+    
+    .newsletter .btn button {
+        font-size: 1rem;
+    }
+
+    .tips, .destinations, .featured, .newsletter {
+        padding: 2rem 4rem;
+    }
+}
+

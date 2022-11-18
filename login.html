@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.4/swiper-bundle.css" integrity="sha512-wbWvHguVvzF+YVRdi8jOHFkXFpg7Pabs9NxwNJjEEOjiaEgjoLn6j5+rPzEqIwIroYUMxQTQahy+te87XQStuA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="login.css">
+    <title>Travelog | Traveler's Guide</title>
+</head>
+<body class="login">
+
+    <div class="slider">
+        <div class="swiper login-swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="./img/landing-1.jpg"></div>
+                <div class="swiper-slide"><img src="./img/landing-2.jpg"></div>
+                <div class="swiper-slide"><img src="./img/landing-3.jpg"></div>
+            </div>
+        </div>
+        <div class="message">
+            <h1>Welcome Back!</h1>
+        </div>
+    </div>
+    <div class="form">
+        <form>
+            <h1>Welcome</h1>
+            <div class="inputs">
+                <div class="input">
+                    <label for="username">Username: </label>
+                    <input type="text" name="username" placeholder="Username...">
+                </div>
+                <div class="input">
+                    <label for="password">Password: </label>
+                    <input type="password" name="password" placeholder="Password...">
+                </div>
+            </div>
+            <div class="submit">
+                <button>LOGIN</button>
+                <p>Don't have an account yet, <a href="./register.html"><strong>Register!</strong></a></p>    
+            </div>
+        </form>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.3/vanilla-tilt.min.js" integrity="sha512-YqX0dBrbisAejDMPCn2AbiSQ8ap7IfYQxIDnfUZH3OveZlZMUk/U6WBIPEX4fgtqfNGFD9uyb3endHI5ks6raA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.4/swiper-bundle.min.js" integrity="sha512-k2o1KZdvUi59PUXirfThShW9Gdwtk+jVYum6t7RmyCNAVyF9ozijFpvLEWmpgqkHuqSWpflsLf5+PEW6Lxy/wA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</body>
+
+<script>
+    var swiper = new Swiper(".login-swiper", {
+        loop: true,
+        effect: 'fade',
+        autoplay: {
+            delay: 3000,
+        }
+    })
+</script>
+
+</html>
